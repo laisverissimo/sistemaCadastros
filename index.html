@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>área de Cadastros</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="content first-content" id="first-content">
+      <div class="first-column">
+        <h2 class="title tittle-primary">Novos Clientes</h2>
+        <p class="description description-primary">Criar novo cadastro</p>
+        <p class="description description-primary">Por favor, cadastre as informações aqui</p>
+        <button id="cadastrar-cliente" class="btn btn-primary">Cadastrar Cliente</button>
+      </div>
+      <div class="second-column">
+        <h2 class="title title-second">Cadastro de produtos</h2>
+        <p class="description description-second">Insira as informações do seu novo produto:</p>
+        <form class="form" id="form-product">
+          <input name="product" placeholder="Produto">
+          <input name="description" placeholder="Descrição">
+          <input name="categoria" placeholder="Categoria">
+          <input name="preco" placeholder="Preço">
+          <input name="estoque" placeholder="Estoque">
+          <input name="variacoes" placeholder="Variações">
+          <input name="peso" placeholder="Peso-kg">
+          <button class="btn btn-second" type="submit">Cadastrar</button>
+        </form>
+      </div>
+      <!---Second column--->
+    </div>
+    <!--FIRST CONTENT-->
+
+    <div class="content second-content hidden" id="second-content">
+      <div class="first-column">
+        <h2 class="title title-primary">Área do lojista</h2>
+        <p class="description description-primary">Deseja adicionar um novo produto?</p>
+        <p class="description description-primary">Por favor, cadastre os dados do seu produto aqui:</p>
+        <button id="cadastrar-produto" class="btn btn-primary">Cadastrar Produto</button>
+      </div>
+
+      <div class="second-column">
+        <h2 class="title title-second">Novo Cliente</h2>
+        <p class="description description-second">Insira as informações para realizar o cadastro:</p>
+        <form class="form" id="form-client">
+          <input name="nome" placeholder="Nome Completo">
+          <input name="email" placeholder="E-mail">
+          <input name="telefone" placeholder="Telefone">
+          <input name="endereco" placeholder="Endereço">
+          <input name="nascimento" placeholder="Data de nascimento">
+          <input name="genero" placeholder="gênero">
+          <input name="cpf" placeholder="CPF">
+          <button class="btn btn-second" type="submit">Cadastrar</button>
+        </form>
+      </div>
+      <!---Second column--->
+    </div>
+    <!---Second content--->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
